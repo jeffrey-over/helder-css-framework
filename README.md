@@ -1,4 +1,3 @@
-# primor-css-framework
+# Primor CSS Framework
 Lightweight CSS Framework
 
-Yet another CSS framework!
