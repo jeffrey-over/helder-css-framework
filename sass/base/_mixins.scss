@@ -1,6 +1,6 @@
 // Mobile first 
 @mixin breakpoint-phone-up {
-	@media (min-width: #{$mobile}) {
+	@media (min-width: #{tablet-portrait}) {
 		@content;
 	}
 }

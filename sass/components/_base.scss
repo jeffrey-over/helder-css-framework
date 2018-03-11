@@ -36,7 +36,6 @@ body {
     margin-right: auto;
     padding: $container-padding;
 }
-
     @include breakpoint-phone-up {
         .container {
             max-width: 80%;
@@ -48,12 +47,17 @@ body {
         }
     }
 
-.full-width {
+.has-full-width {
     width: 100%;
     max-width: 100%;
 }
+    @include breakpoint-phone-up {
+        .has-full-width {
+            padding: 0;
+        }
+    }
 
-.small-width {
+.has-small-width {
     max-width: $mobile;
 }
 
