@@ -61,5 +61,10 @@ body {
     max-width: $mobile;
 }
 
-// Sections
+// Margins and Padding
+
+p,ol,ul,dl {
+ 	margin: 0 0 $default-margin 0;
+}
+
 section {padding-top:40px;}
