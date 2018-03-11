@@ -1,0 +1,46 @@
+
+
+// Clearfix
+.columns::before,
+.columns::after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+
+
+.full,
+.third,
+.two-thirds,
+.fourth,
+.half {
+  width: 100%;
+}
+
+
+    @include breakpoint-phone-up {
+        .full {
+            width: 100%;
+        }
+        .half {
+            width: calc(100% / 2);
+        }
+        .third {
+            width: calc(100% / 3);
+        }
+        .fourth {
+            width: calc(100% / 4);
+        }
+        .two-thirds {
+            width: calc(100% / 3 * 2);
+        }
+        .column {
+            float: left;
+        }
+    }
+
+
+.column {
+    padding: 1rem;
+    margin-bottom: 0 ;
+}

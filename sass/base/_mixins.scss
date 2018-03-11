@@ -1,0 +1,13 @@
+// Mobile first 
+@mixin breakpoint-phone-up {
+	@media (min-width: #{$mobile}) {
+		@content;
+	}
+}
+
+// Break on desktop
+@mixin breakpoint-desktop-up {
+	@media (min-width: #{$desktop}) {
+		@content;
+	}
+}
