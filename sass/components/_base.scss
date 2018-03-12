@@ -19,6 +19,7 @@ body {
   font-size: $font-size-small;
   line-height: $line-height;
   color: $font-color;
+  -webkit-font-smoothing: antialiased;
 }
 
 
