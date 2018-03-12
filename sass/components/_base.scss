@@ -14,7 +14,7 @@ html {
 
 
 body {
-  background-color: $background;
+  background-color: $background-color;
   font-family: $font-family;
   font-size: $font-size-small;
   line-height: $line-height;
@@ -53,7 +53,7 @@ body {
     max-width: 100%;
 }
     @include breakpoint-phone-up {
-        .has-full-width {
+       .container.has-full-width {
             padding: 0;
         }
     }

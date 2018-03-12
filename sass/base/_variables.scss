@@ -5,29 +5,69 @@ $desktop: 1000px;
 $widescreen: 1200px;
 $fullhd: 1800px; 
 
+// Global
+$base-color: #3295FB;
+$secondary-color: #90EEE1;
+$accent-color: #e4e4e4;
 
-// Initial
-$background: #ffffff;
-$font-family: -apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
+$background-color: #ffffff;
+$background-color-secondary: #6356E5;
 $font-color: #404040;
+$error-color: #b30015;
+$tooltip-color: #8a7dff;
+$emphasis-color: #a6a6a6;
+$highlight-color: #ffeea8;
+
+$link-color: #2a00b3;
+$link-hover-color: #0077b3;
+$link-visited-color: #00b0b3;
+$link-visited-blending-color: #24fbff;
+
+$font-family: -apple-system, "Myriad Set Pro", "Lucida Grande", "Helvetica Neue", "Helvetica", "Arial", "Verdana", "sans-serif";
 $font-size: 1.7rem;
 $font-size-small: 1.6rem;
 $line-height: 1.6;
+
 $default-margin: 1.5rem;
 
+// Secondary styling
+$secondary-background: $secondary-color;
+$secondary-border: 1px solid $secondary-color;
+$secondary-font-color: #ffffff;
+
+// Outlined styling
+$outline-border: 1px solid $accent-color;
+$outline-border-hover: 1px solid darken($accent-color, 30%);
+$outline-background: transparent;
+$outline-background-hover: transparent;
+$outline-font-color: darken($accent-color, 50%);
+$outline-font-color-hover: darken($accent-color, 50%);
 
 // Container
 $container-padding: 0 10px;
-
 
 // Typography
 $heading-font-weight: 600;
 $heading-font-color: #333447;
 $heading-line-height: 1.25;
 
-$h1: 4.8rem;
+$h1: 4.2rem;
 $h2: 3.6rem;
 $h3: 2.4rem;
 $h4: 2rem;
 $h5: 1.6rem;
 $h6: 1.4rem;
+
+// Buttons 
+$button-background: $base-color;
+$button-background-hover: darken($button-background, 10%);
+$button-font-color: #ffffff;
+$button-font-weight: 400;
+$button-font-family: $font-family;
+$button-font-size: 1.5rem;
+$button-border-width: 1px;
+$button-border-style: solid;
+$button-border-color: $button-background;
+$button-border-radius: 5px;
+$button-text-transform: none;
+

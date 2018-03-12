@@ -1,4 +1,4 @@
-//Layout
+// Styling
 .has-shadow {
     -webkit-box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
     box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
@@ -9,7 +9,26 @@
 }
 
 
+
+.is-secondary {
+    background: $secondary-background;
+    color: $secondary-font-color;
+    border: $secondary-border;
+}
+
+.is-outlined {
+    border: $outline-border;
+    background: $outline-background;
+    color: darken($accent-color, 50%);
+	&:hover {
+        border: 1px solid darken($accent-color, 30%);
+        background: $outline-background-hover;
+        color: $outline-font-color-hover;
+	}
+}
+
 .responsive-image {
     max-width: 100%;
     height: auto;
 }
+
