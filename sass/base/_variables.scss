@@ -6,13 +6,13 @@ $widescreen: 1200px;
 $fullhd: 1800px; 
 
 // Global
-$base-color: #3295FB;
-$secondary-color: #90EEE1;
-$accent-color: #e4e4e4;
+$base-color: #0984e3;
+$secondary-color: #55efc4;
+$accent-color: #b2bec3;
 
 $background-color: #ffffff;
-$background-color-secondary: #6356E5;
-$font-color: #404040;
+$background-color-secondary: #dfe6e9;
+$font-color: #4D4D4D;
 $error-color: #b30015;
 $tooltip-color: #8a7dff;
 $emphasis-color: #a6a6a6;
@@ -32,8 +32,11 @@ $default-margin: 1.5rem;
 
 // Secondary styling
 $secondary-background: $secondary-color;
+$secondary-background-hover: darken($secondary-background, 10%);
 $secondary-border: 1px solid $secondary-color;
+$secondary-border-hover: 1px solid darken($secondary-color, 10%);
 $secondary-font-color: #ffffff;
+$outline-font-color-hover: #ffffff;
 
 // Outlined styling
 $outline-border: 1px solid $accent-color;

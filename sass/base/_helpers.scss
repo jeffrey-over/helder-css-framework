@@ -14,6 +14,11 @@
     background: $secondary-background;
     color: $secondary-font-color;
     border: $secondary-border;
+	&:hover {
+        border: $secondary-border-hover;
+        background: $secondary-background-hover;
+        color: $secondary-font-color;
+	}    
 }
 
 .is-outlined {
@@ -21,7 +26,7 @@
     background: $outline-background;
     color: darken($accent-color, 50%);
 	&:hover {
-        border: 1px solid darken($accent-color, 30%);
+        border: $outline-border-hover;
         background: $outline-background-hover;
         color: $outline-font-color-hover;
 	}
