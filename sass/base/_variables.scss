@@ -1,34 +1,52 @@
+// Imports
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 // Sizing
 $mobile: 600px;
 $tablet-portrait: 800px;
 $desktop: 1000px;
 $widescreen: 1200px;
 $fullhd: 1800px; 
+$default-margin: 1.5rem;
 
-// Global
+
+// Global coloring
 $base-color: #0984e3;
 $secondary-color: #55efc4;
 $accent-color: #b2bec3;
 
 $background-color: #ffffff;
 $background-color-secondary: #dfe6e9;
+
 $font-color: #4D4D4D;
+$link-color: #0070c9;
 $error-color: #b30015;
 $tooltip-color: #8a7dff;
-$emphasis-color: #a6a6a6;
+$hr-color: rgba(10, 10, 10, 0.1);
 $highlight-color: #ffeea8;
 
-$link-color: #2a00b3;
-$link-hover-color: #0077b3;
-$link-visited-color: #00b0b3;
-$link-visited-blending-color: #24fbff;
 
-$font-family: -apple-system, "Myriad Set Pro", "Lucida Grande", "Helvetica Neue", "Helvetica", "Arial", "Verdana", "sans-serif";
-$font-size: 1.7rem;
-$font-size-small: 1.6rem;
+// Container
+$container-padding: 0 10px;
+
+
+// Typography
+$font-family: "Open Sans", -apple-system, "Myriad Set Pro", "Lucida Grande", "Helvetica Neue", "Helvetica", "Arial", "Verdana", "sans-serif";
+$font-size: 1.6rem;
+$font-size-small: 1.5rem;
 $line-height: 1.6;
 
-$default-margin: 1.5rem;
+$heading-font-weight: 600;
+$heading-font-color:  rgba(0,0,0,0.88);
+$heading-line-height: 1.25;
+
+$h1: 4.2rem;
+$h2: 3.4rem;
+$h3: 2.4rem;
+$h4: 2rem;
+$h5: 1.6rem;
+$h6: 1.4rem;
+
 
 // Secondary styling
 $secondary-background: $secondary-color;
@@ -38,6 +56,7 @@ $secondary-border-hover: 1px solid darken($secondary-color, 10%);
 $secondary-font-color: #ffffff;
 $outline-font-color-hover: #ffffff;
 
+
 // Outlined styling
 $outline-border: 1px solid $accent-color;
 $outline-border-hover: 1px solid darken($accent-color, 30%);
@@ -46,20 +65,6 @@ $outline-background-hover: transparent;
 $outline-font-color: darken($accent-color, 50%);
 $outline-font-color-hover: darken($accent-color, 50%);
 
-// Container
-$container-padding: 0 10px;
-
-// Typography
-$heading-font-weight: 600;
-$heading-font-color: #333447;
-$heading-line-height: 1.25;
-
-$h1: 4.2rem;
-$h2: 3.6rem;
-$h3: 2.4rem;
-$h4: 2rem;
-$h5: 1.6rem;
-$h6: 1.4rem;
 
 // Buttons 
 $button-background: $base-color;

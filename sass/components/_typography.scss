@@ -1,3 +1,4 @@
+// Headings
 h1,h2,h3,h4,h5,h6 {
     margin: 2rem 0 $default-margin;
     color: $heading-font-color;
@@ -12,3 +13,48 @@ h3 {font-size: $h3;}
 h4 {font-size: $h4;}
 h5 {font-size: $h5;}
 h6 {font-size: $h6;}
+
+
+// Links
+a {
+	color: $link-color;
+	text-decoration: none;
+	&:hover,
+	{
+		text-decoration: underline;
+    }
+    &:visited,
+    &:active,
+	&:focus  {
+		text-decoration: none;
+	}    
+}
+
+dt {
+   font-weight: bold;
+   text-decoration: underline;
+ }
+ 
+dd {
+   margin: 0;
+   padding: 0 0 0.5em 0;
+ }
+
+
+// Blockqoute
+blockquote {
+    font: 14px/22px normal $font-family;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    padding-left: 15px;
+    border-left: 2px solid rgba(10, 10, 10, 0.1);
+  } 
+  
+
+
+// Manipulation
+b {
+    color: black;
+}
+

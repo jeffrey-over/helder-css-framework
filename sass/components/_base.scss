@@ -23,7 +23,7 @@ body {
 }
 
 
-    @include breakpoint-phone-up {
+    @include breakpoint-desktop-up {
         body {
             font-size: $font-size;
         }
@@ -62,10 +62,66 @@ body {
     max-width: $mobile;
 }
 
-// Margins and Padding
 
+// Margins and Padding
 p,ol,ul,dl {
- 	margin: 0 0 $default-margin 0;
+    margin: 0 0 $default-margin 0;
 }
 
 section {padding-top:40px;}
+
+// hr
+hr {
+    margin: 2rem 0;
+    border-width: 0;
+    border-top: 1px solid $hr-color;
+}
+
+// Highlight
+mark {
+	background: $highlight-color;
+	padding: 0 0.4rem;
+}
+
+// Highlight selection
+::selection {
+    background: $highlight-color; 
+  }
+  ::-moz-selection {
+    background: $highlight-color; 
+  }
+
+// Code preview
+pre {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	overflow: auto;
+	overflow-y: hidden;
+	line-height: 20px;    
+    overflow: auto;
+    padding: 1rem;
+    font-size: 14px;
+    margin: 1.5rem 0;
+    background: #f8f8f8;    
+}
+
+// From PrismJS
+code, pre {
+    color: 333;
+    text-shadow: 0 1px white;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+}
