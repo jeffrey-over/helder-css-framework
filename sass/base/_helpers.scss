@@ -8,27 +8,7 @@
     border: 1px solid rgba(10, 10, 10, 0.1);
 }
 
-.is-secondary {
-    background: $secondary-background;
-    color: $secondary-font-color;
-    border: $secondary-border;
-	&:hover {
-        border: $secondary-border-hover;
-        background: $secondary-background-hover;
-        color: $secondary-font-color;
-	}    
-}
 
-.is-outlined {
-    border: $outline-border;
-    background: $outline-background;
-    color: darken($accent-color, 50%);
-	&:hover {
-        border: $outline-border-hover;
-        background: $outline-background-hover;
-        color: $outline-font-color-hover;
-	}
-}
 
 .responsive-image {
     max-width: 100%;

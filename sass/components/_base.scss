@@ -87,7 +87,7 @@ mark {
 ::selection {
     background: $highlight-color; 
   }
-  ::-moz-selection {
+::-moz-selection {
     background: $highlight-color; 
   }
 
@@ -103,7 +103,14 @@ pre {
     padding: 1rem;
     font-size: 14px;
     margin: 1.5rem 0;
-    background: #f8f8f8;    
+    background: #f8f8f8;  
+    color: $font-color;  
+}
+
+code {
+    background-color: #f8f8f8;
+    color: #d63131;
+    padding: 0 .6rem;
 }
 
 // From PrismJS
@@ -112,7 +119,6 @@ code, pre {
     text-shadow: 0 1px white;
     font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
     text-align: left;
-    white-space: pre;
     word-spacing: normal;
     word-break: normal;
     word-wrap: normal;

@@ -16,22 +16,49 @@
 	cursor: pointer;
 	text-decoration: none;
 	line-height: 1;
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;   
 	&::-moz-focus-inner {
 		border: 0;
 		padding: 0;
 	}
 	&:hover {
-        border: $button-border-width $button-border-style darken($button-border-color, 10%);
-        background: $button-background-hover;
-        color: $button-font-color;
-        text-decoration: none;
+	border: $button-border-width $button-border-style darken($button-border-color, 10%);
+	background: $button-background-hover;
+	color: $button-font-color;
+	text-decoration: none;
 	}
 	&:focus,
 	&:active {
-        border: $button-border-width $button-border-style darken($button-border-color, 10%);
-        background: darken($button-background, 10%);
-        color: $button-font-color;
-        text-decoration: none;
+	border: $button-border-width $button-border-style darken($button-border-color, 10%);
+	background: darken($button-background, 20%);
+	color: $button-font-color;
+	text-decoration: none;
 	}
 
 }
+
+
+.is-secondary {
+	background: $secondary-background;
+	color: $secondary-font-color;
+	border: $secondary-border;
+		&:hover {
+		border: $secondary-border-hover;
+		background: $secondary-background-hover;
+		color: $secondary-font-color;
+		}    
+}
+    
+    .is-outlined {
+	border: $outline-border;
+	background: $outline-background;
+	color: darken($accent-color, 50%);
+	    &:hover {
+	    border: $outline-border-hover;
+	    background: $outline-background-hover;
+	    color: $outline-font-color-hover;
+	    }
+    }
