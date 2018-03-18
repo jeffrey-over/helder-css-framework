@@ -1,7 +1,7 @@
 // Styling
 .has-shadow {
-    -webkit-box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
-    box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+    -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
 }
 
 .has-border {
@@ -13,6 +13,9 @@
     height: auto;
 }
 
+.background-color-secondary {
+    background-color: $background-color-secondary;
+}
 
 // Display
 .clearfix {

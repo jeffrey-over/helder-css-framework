@@ -1,0 +1,22 @@
+
+.card {
+    @extend .has-shadow;
+    background-color: $background-color;
+    float: left;
+    width: 100%;
+    padding: 2rem;
+    margin: 1rem;
+    transition: all 0.3s linear 0s;
+}
+
+@include breakpoint-desktop-up {
+    .card {
+        max-width: calc(33% - 3rem);
+        margin: $default-margin;
+    }
+}
+
+
+.card h1, h2, h3, h4, h5, h6 {
+    margin: 1rem 0;
+}
