@@ -40,6 +40,6 @@
 
 
 .column {
-    padding: 1rem;
-    margin-bottom: 0 ;
+    padding: $column-padding;
+    margin-bottom: $column-margin-bottom;
 }

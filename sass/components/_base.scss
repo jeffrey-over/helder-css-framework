@@ -12,7 +12,6 @@ html {
     overflow-y: scroll;
 }
 
-
 body {
   background-color: $background-color;
   font-family: $font-family;
@@ -21,7 +20,6 @@ body {
   color: $font-color;
   -webkit-font-smoothing: antialiased;
 }
-
 
     @include breakpoint-desktop-up {
         body {
@@ -62,25 +60,26 @@ body {
     max-width: $mobile;
 }
 
-
 // Margins and Padding
 p,ol,ul,dl,table {
-    margin: 0 0 $default-margin 0;
+    margin: $basic-elements-margin;
 }
 
-section {padding-top:40px;}
+section {
+    padding: $section-padding;
+}
 
 // hr
 hr {
-    margin: 2rem 0;
+    margin: $hr-margin;
     border-width: 0;
-    border-top: 1px solid $hr-color;
+    border-top: $hr-border;
 }
 
 // Highlight
 mark {
 	background: $highlight-color;
-	padding: 0 0.4rem;
+	padding: $mark-padding;
 }
 
 // Highlight selection
@@ -94,35 +93,31 @@ mark {
 // Code preview
 pre {
 	width: 100%;
-	padding: 0;
-	margin: 0;
 	overflow: auto;
-	overflow-y: hidden;
-	line-height: 20px;    
+	overflow-y: hidden;   
     overflow: auto;
-    padding: 1rem;
-    font-size: 14px;
-    margin: 1.5rem 0;
-    background: #f8f8f8;  
-    color: $font-color;  
+    padding: $pre-padding;
+    font-size: $pre-font-size;
+	margin: $pre-margin;    
+    background: $pre-background-color;  
+    color: $pre-font-color;  
 }
 
 code {
-    background-color: #f8f8f8;
-    color: #d63131;
-    padding: 0 .6rem;
+    background-color: $code-background-color;
+    color: $code-font-color;
+    padding: $code-padding;
 }
 
 // From PrismJS
 code, pre {
-    color: 333;
-    text-shadow: 0 1px white;
-    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-    text-align: left;
+    @extend .text-left;
+    text-shadow: $code-text-shadow;
+    font-family: $code-font-family;
     word-spacing: normal;
     word-break: normal;
     word-wrap: normal;
-    line-height: 1.5;
+	line-height: $code-line-height; 
     -moz-tab-size: 4;
     -o-tab-size: 4;
     tab-size: 4;

@@ -7,8 +7,6 @@ $tablet-portrait: 800px;
 $desktop: 1000px;
 $widescreen: 1200px;
 $fullhd: 1800px; 
-$default-margin: 1.5rem;
-
 
 // Global coloring
 $base-color: #0984e3;
@@ -19,24 +17,30 @@ $background-color-secondary: #f6f9fc;
 $font-color: #4D4D4D;
 $font-color-secondary: #666666;
 $link-color: #0070c9;
-$hr-color: rgba(10, 10, 10, 0.1);
 $highlight-color: #ffeea8;
+$default-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+$default-border: 1px solid rgba(10, 10, 10, 0.1);
 
-
-// Container
+// Grid & Layout
+$default-margin: 1.5rem;
+$default-padding: 1.5rem;
+$basic-elements-margin: 0 0 $default-margin 0; //p,ol,ul,dl,table
 $container-padding: 0 10px;
-
+$column-padding: 1rem;
+$column-margin-bottom: 0;
+$section-padding: 40px 0 0 0;
+$mark-padding: 0 0.4rem;
 
 // Typography
 $font-family: "Open Sans", -apple-system, "Myriad Set Pro", "Lucida Grande", "Helvetica Neue", "Helvetica", "Arial", "Verdana", "sans-serif";
 $font-size: 1.6rem;
 $font-size-small: 1.5rem;
 $line-height: 1.6;
-
 $heading-font-weight: 600;
 $heading-font-color:  rgba(0,0,0,0.88);
 $heading-line-height: 1.25;
-
+$heading-margin: 2rem 0 $default-margin;
+$heading-letter-spacing: -.1rem;
 $h1: 4.2rem;
 $h2: 3.4rem;
 $h3: 2.4rem;
@@ -44,6 +48,19 @@ $h4: 2rem;
 $h5: 1.6rem;
 $h6: 1.4rem;
 
+// Forms
+$label-font-weight: 600;
+$label-margin: 2rem 0 1rem;
+$input-border-radius: 5px;
+$input-padding: 1rem;
+$input-line-height: 1;
+$input-focus-box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+$input-focus-border: 1px solid rgba(81, 203, 238, 1);
+$input-select-height: 4.6rem;
+$input-valid-box-shadow: 0 0 5px #55efc4;
+$input-valid-border: 1px solid #55efc4;
+$input-invalid-box-shadow: 0 0 5px #D63131;
+$input-invalid-border: 1px solid #D63131;
 
 // Secondary styling
 $secondary-background: $secondary-color;
@@ -53,7 +70,6 @@ $secondary-border-hover: 1px solid darken($secondary-color, 10%);
 $secondary-font-color: #ffffff;
 $outline-font-color-hover: #ffffff;
 
-
 // Outlined styling
 $outline-border: 1px solid $accent-color;
 $outline-border-hover: 1px solid darken($accent-color, 30%);
@@ -61,7 +77,6 @@ $outline-background: transparent;
 $outline-background-hover: transparent;
 $outline-font-color: darken($accent-color, 50%);
 $outline-font-color-hover: darken($accent-color, 50%);
-
 
 // Buttons 
 $button-background: $base-color;
@@ -75,4 +90,52 @@ $button-border-style: solid;
 $button-border-color: $button-background;
 $button-border-radius: 5px;
 $button-text-transform: none;
+$button-padding: 1.5rem;
+$button-margin: 0 0 .5rem 0;
 
+// Cards
+$card-padding: 2rem;
+$card-margin: 1rem;
+$card-font-size: 1.4rem;
+$card-heading-margin: 1rem 0;
+$card-box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.3);
+
+// Table
+$table-caption-font-style: italic;
+$table-heading-font-color: $heading-font-color;
+$table-footer-font-weight: 600;
+$table-row-hover-background: $background-color-secondary;
+$table-cell-padding: 1.2rem 1.5rem;
+$table-cell-border: 1px solid rgba(10, 10, 10, 0.1);
+$table-cell-margin: 0;
+$table-cell-background: transparent;
+
+// Lists
+$dd-margin: 0;
+$dd-padding: 0 0 0.5em 0;
+
+// Blockqoute
+$blockqoute-font: 14px/22px normal $font-family;
+$blockqoute-margin: 10px 0 10px 50px;
+$blockqoute-padding: 0 0 0 15px;
+$blockqoute-border: 2px solid rgba(10, 10, 10, 0.1);
+
+// HR
+$hr-color: rgba(10, 10, 10, 0.1);
+$hr-margin: 2rem 0;
+$hr-border: 1px solid $hr-color;
+
+// Pre
+$pre-margin: 1.5rem 0;
+$pre-padding: 1rem;
+$pre-font-size: 14px;
+$pre-background-color: #f8f8f8;
+$pre-font-color: $font-color;
+
+// Code
+$code-background-color: #f8f8f8;
+$code-font-color: #d63131;
+$code-line-height: inherit;
+$code-padding: 0 .6rem;
+$code-text-shadow: 0 1px white;
+$code-font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;

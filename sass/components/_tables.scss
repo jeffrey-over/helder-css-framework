@@ -1,6 +1,6 @@
 caption {
-    text-align: left;
-    font-style: italic;
+    @extend .text-left;
+    font-style: $table-caption-font-style;
 }
 
 table {
@@ -11,13 +11,13 @@ table {
 }
 
 thead, tfoot {
-    color: $heading-font-color;
-    text-align: left;
+    @extend .text-left;
+    color: $table-heading-font-color;
     vertical-align: bottom;
 }
 
 tfoot {
-    font-weight: 600;
+    font-weight: $table-footer-font-weight;
 }
 
 td:first-child, .th:first-child {
@@ -29,19 +29,19 @@ th:last-child, td:last-child {
 }
 
 tr:hover {
-    background-color: $background-color-secondary;
+    background-color: $table-row-hover-background;
 }
 
 th, td {
-    padding: 1.2rem 1.5rem;
-    text-align: left;
-    border-bottom: 1px solid rgba(10, 10, 10, 0.1);
+    @extend .text-left;
+    padding: $table-cell-padding;
+    border-bottom: $table-cell-border;
     font-size: inherit;
     color: inherit;
-    margin: 0;
+    margin: $table-cell-margin;
     overflow: visible;
 }
 
 td {
-    background-color: transparent;
+    background-color: $table-cell-background;
 }

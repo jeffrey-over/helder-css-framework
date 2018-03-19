@@ -4,10 +4,10 @@ fieldset {
 }
 
 label {
-    font-weight: 600;
+    font-weight: $label-font-weight;
     max-width: 100%;
     display: block;
-    margin: 2rem 0 1rem;
+    margin: $label-margin;
     font-family: $font-family;
     font-size: $font-size-small;
     line-height: $line-height;
@@ -18,8 +18,8 @@ label {
 [type=color], [type=date], [type=datetime-local], [type=datetime], [type=email], [type=month], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=time], [type=url], [type=week], select, textarea {
     @extend .has-border;
     display: block;
-    border-radius: 5px;
-    padding: 1rem;
+    border-radius: $input-border-radius;
+    padding: $input-padding;
     outline: none;
     background: transparent;
     margin-bottom: 1rem;
@@ -27,52 +27,30 @@ label {
     max-width: 100%;
     font-family: $font-family;
     font-size: $font-size-small;
-    line-height: 1;
+    line-height: $input-line-height;
     color: $font-color;
     -webkit-font-smoothing: antialiased;
     -webkit-transition: all 0.50s ease-in-out;
     -moz-transition: all 0.50s ease-in-out;
     -ms-transition: all 0.50s ease-in-out;
     -o-transition: all 0.50s ease-in-out;    
-}
-
-[type=color], [type=date], [type=datetime-local], [type=datetime], [type=email], [type=month], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=time], [type=url], [type=week], select, textarea {
-    @extend .has-border;
-    display: block;
-    border-radius: 5px;
-    padding: 1rem;
-    outline: none;
-    background: transparent;
-    margin-bottom: 1rem;
-    width: 100%;
-    max-width: 100%;
-    font-family: $font-family;
-    font-size: $font-size-small;
-    line-height: 1;
-    color: $font-color;
-    -webkit-font-smoothing: antialiased;
-    -webkit-transition: all 0.20s ease-in-out;
-    -moz-transition: all 0.20s ease-in-out;
-    -ms-transition: all 0.20s ease-in-out;
-    -o-transition: all 0.20s ease-in-out;    
-}
-
-[type=color]:focus, [type=date]:focus, [type=datetime-local]:focus, [type=datetime]:focus, [type=email]:focus, [type=month]:focus, [type=number]:focus, [type=password]:focus, [type=search]:focus, [type=tel]:focus, [type=text]:focus, [type=time]:focus, [type=url]:focus, [type=week]:focus, select:focus, textarea:focus {
-box-shadow: 0 0 5px rgba(81, 203, 238, 1);
-border: 1px solid rgba(81, 203, 238, 1);
+    &:focus {
+        box-shadow: $input-focus-box-shadow;
+        border: $input-focus-border;
+    }
 }
 
 select {
-    height: 4.6rem
+    height: $input-select-height;
 }
 
 // Validation
 .is-valid { 
-    box-shadow: 0 0 5px #55efc4;
-    border: 1px solid #55efc4;
+    box-shadow: $input-valid-box-shadow;
+    border: $input-valid-border;
 }
 
 .is-invalid {
-    box-shadow: 0 0 5px #D63131;
-    border: 1px solid #D63131;    
+    box-shadow: $input-invalid-box-shadow;
+    border: $input-invalid-border;    
 }

@@ -1,10 +1,10 @@
 // Headings
 h1,h2,h3,h4,h5,h6 {
-    margin: 2rem 0 $default-margin;
+    margin: $heading-margin;
     color: $heading-font-color;
 	font-weight: $heading-font-weight;
     line-height: $heading-line-height;
-    letter-spacing: -.1rem;
+    letter-spacing: $heading-letter-spacing;
 }
 
 h1 {font-size: $h1;}
@@ -13,7 +13,6 @@ h3 {font-size: $h3;}
 h4 {font-size: $h4;}
 h5 {font-size: $h5;}
 h6 {font-size: $h6;}
-
 
 // Links
 a {
@@ -36,22 +35,17 @@ dt {
  }
  
 dd {
-   margin: 0;
-   padding: 0 0 0.5em 0;
+   margin: $dd-margin;
+   padding: $dd-padding;
  }
-
 
 // Blockqoute
 blockquote {
-    font: 14px/22px normal $font-family;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 50px;
-    padding-left: 15px;
-    border-left: 2px solid rgba(10, 10, 10, 0.1);
+    font: $blockqoute-font;
+    margin: $blockqoute-margin;
+    padding: $blockqoute-padding;
+    border-left: $blockqoute-border;
   } 
-  
-
 
 // Manipulation
 b {

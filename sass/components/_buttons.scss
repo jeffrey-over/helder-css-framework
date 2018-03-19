@@ -1,4 +1,5 @@
 .button, button, input[type="submit"], input[type="reset"], input[type="button"] {
+	@extend .text-center;
 	-webkit-appearance: none;
 	display: inline-block;
 	border: $button-border-width $button-border-style $button-border-color;
@@ -9,10 +10,9 @@
 	font-family: $button-font-family;
 	font-size: $button-font-size;
 	text-transform: $button-text-transform;
-	padding: 1.5rem;
-	margin: 0 0 .5rem 0;
+	padding: $button-padding;
+	margin: $button-margin;
 	vertical-align: middle;
-	text-align: center;
 	cursor: pointer;
 	text-decoration: none;
 	line-height: 1;
@@ -25,17 +25,17 @@
 		padding: 0;
 	}
 	&:hover {
-	border: $button-border-width $button-border-style darken($button-border-color, 10%);
-	background: $button-background-hover;
-	color: $button-font-color;
-	text-decoration: none;
+		border: $button-border-width $button-border-style darken($button-border-color, 10%);
+		background: $button-background-hover;
+		color: $button-font-color;
+		text-decoration: none;
 	}
 	&:focus,
 	&:active {
-	border: $button-border-width $button-border-style darken($button-border-color, 10%);
-	background: darken($button-background, 20%);
-	color: $button-font-color;
-	text-decoration: none;
+		border: $button-border-width $button-border-style darken($button-border-color, 10%);
+		background: darken($button-background, 20%);
+		color: $button-font-color;
+		text-decoration: none;
 	}
 
 }
