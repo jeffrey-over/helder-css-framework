@@ -1,0 +1,22 @@
+footer {
+    @extend .text-center;
+    background: $footer-background-color;
+    padding: $footer-padding-mobile;
+    color: $footer-font-color;
+    font-size: $footer-font-size;
+    section {
+        padding: 0;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        color: $footer-heading-font-color;
+    }
+}
+
+@include breakpoint-desktop-up {
+    footer {
+        text-align: left;
+        padding: $footer-padding-desktop;
+    }
+}
+
+
