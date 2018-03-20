@@ -141,6 +141,17 @@ $code-text-shadow: 0 1px white;
 $code-font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 
 
+
+// Header & navigation
+$header-background-color: #191919;
+$header-padding-mobile: 2rem 0;
+$header-padding-desktop: 3rem 0;
+$header-font-color: #a1a7b9;
+$header-font-size: 1.4rem;
+$header-heading-font-color: #a1a7b9;
+
+
+
 // Footer
 $footer-background-color: #191919;
 $footer-padding-mobile: 2rem 0;
@@ -148,3 +159,4 @@ $footer-padding-desktop: 3rem 0;
 $footer-font-color: #a1a7b9;
 $footer-font-size: 1.4rem;
 $footer-heading-font-color: #a1a7b9;
+
