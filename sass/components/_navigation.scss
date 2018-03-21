@@ -1,63 +1,88 @@
-header {
-    @extend .text-left;
-    height: 50px;
-    background: $header-background-color;
-    padding: $header-padding-mobile;
-    color: $header-font-color;
-    font-size: $header-font-size;
-    section {
-        padding: 0;
-    }
-    h1, h2, h3, h4, h5, h6 {
-        color: $header-heading-font-color;
-    }
+.navigation {
+  @extend .text-left;
+  height: $navigation-height;
+  background: $navigation-background-color;
+  padding: $navigation-padding-mobile;
+  color: $navigation-font-color;
+  font-size: $navigation-font-size;
+  section {
+      padding: 0;
+  }
+  h1, h2, h3, h4, h5, h6 {
+      color: $navigation-heading-font-color;
+  }
 }
 
 @include breakpoint-desktop-up {
-    header {
-        text-align: left;
-        padding: $header-padding-desktop;
-    }
+  .navigation {
+      text-align: left;
+      padding: $navigation-padding-desktop;
+  }
 }
 
 
 // Logo and branding
 .brand {
-    position: absolute;
-    padding-left: 20px;
-    float: left;
-    line-height: 1.6;
-    text-transform: uppercase;
-    font-size: 1.4em;
-    a,
-    a:visited {
-      color: inherit;
-      text-decoration: none;
-    }
+  position: absolute;
+  padding-left: 20px;
+  float: left;
+  line-height: $navigation-line-height;
+  text-transform: uppercase;
+  font-size: $logo-font-size;
+  a,
+  a:visited {
+    color: $logo-font-color;
+    text-decoration: none;
   }
-  
+}
+
 
 nav {
-    float: right;
-    ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      li {
-        float: left;
-        position: relative;
-        a,
-        a:visited {
-          display: block;
-          padding: 0 20px;
-          line-height: 1.6;
+  float: right;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      float: left;
+      position: relative;
+      a,
+      a:visited {
+        line-height: $navigation-line-height;
+        display: block;
+        padding: $navigation-link-padding;
+        text-decoration: none;
+        color: $navigation-link-color;
+        &:hover {
+          color: $navigation-link-hover-color;
           text-decoration: none;
-          &:hover {
-            background: #ff0000;
-            color: #000000;
-          }
         }
       }
     }
   }
-  
+}
+
+
+@media only screen and (max-width: $mobile) {
+nav {
+  clear: both;
+  width: 100%;
+  margin: 50px 0;
+  background: $navigation-mobile-background-color;
+  box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.3);
+}
+
+nav li {
+      display: block;
+      clear: both;
+      width: 100%;
+      a,
+      a:visited {
+        padding: $navigation-mobile-link-padding !important;
+        color: $navigation-mobile-link-color !important;
+      }
+      &:hover {
+        background-color: $navigation-mobile-nav-hover-color;
+      }
+    }
+}

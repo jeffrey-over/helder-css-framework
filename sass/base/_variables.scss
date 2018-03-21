@@ -141,16 +141,24 @@ $code-text-shadow: 0 1px white;
 $code-font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 
 
-
-// Header & navigation
-$header-background-color: #191919;
-$header-padding-mobile: 2rem 0;
-$header-padding-desktop: 3rem 0;
-$header-font-color: #a1a7b9;
-$header-font-size: 1.4rem;
-$header-heading-font-color: #a1a7b9;
-
-
+// Navigation
+$navigation-height: 50px;
+$navigation-background-color: #191919;
+$navigation-mobile-background-color: #ffffff;
+$navigation-padding-mobile: 0;
+$navigation-padding-desktop: 0;
+$navigation-font-color: #ffffff;
+$navigation-link-color: #ffffff;
+$navigation-mobile-link-color: $font-color;
+$navigation-link-hover-color: #a1a7b9;
+$navigation-link-padding: 0 30px;
+$navigation-mobile-link-padding: 0 40px;
+$navigation-font-size: 1.4rem;
+$navigation-heading-font-color: #a1a7b9;
+$navigation-line-height: $navigation-height;
+$navigation-mobile-nav-hover-color: $background-color-secondary;
+$logo-font-color: #fff;
+$logo-font-size: $navigation-font-size;
 
 // Footer
 $footer-background-color: #191919;
