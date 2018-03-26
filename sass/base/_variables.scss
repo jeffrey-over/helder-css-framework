@@ -9,7 +9,7 @@ $widescreen: 1200px;
 $fullhd: 1800px; 
 
 // Global coloring
-$base-color: #0984e3;
+$base-color: #1569fb;
 $secondary-color: #55efc4;
 $accent-color: #dfe6e9;
 $background-color: #ffffff;
@@ -84,11 +84,11 @@ $button-background-hover: darken($button-background, 10%);
 $button-font-color: #ffffff;
 $button-font-weight: 400;
 $button-font-family: $font-family;
-$button-font-size: 1.5rem;
+$button-font-size: 1.5rem 2rem;
 $button-border-width: 1px;
 $button-border-style: solid;
 $button-border-color: $button-background;
-$button-border-radius: 5px;
+$button-border-radius: 50px;
 $button-text-transform: none;
 $button-padding: 1.5rem;
 $button-margin: 0 0 .5rem 0;
@@ -143,12 +143,12 @@ $code-font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 
 // Navigation
 $navigation-height: 50px;
-$navigation-background-color: #191919;
-$navigation-mobile-background-color: #ffffff;
+$navigation-background-color: transparant;
+$navigation-mobile-background-color: transparant;
 $navigation-padding-mobile: 0;
 $navigation-padding-desktop: 0;
-$navigation-font-color: #ffffff;
-$navigation-link-color: #ffffff;
+$navigation-font-color: $font-color;
+$navigation-link-color: $font-color;
 $navigation-mobile-link-color: $font-color;
 $navigation-link-hover-color: #a1a7b9;
 $navigation-link-padding: 0 30px;
@@ -157,7 +157,7 @@ $navigation-font-size: 1.4rem;
 $navigation-heading-font-color: #a1a7b9;
 $navigation-line-height: $navigation-height;
 $navigation-mobile-nav-hover-color: $background-color-secondary;
-$logo-font-color: #fff;
+$logo-font-color: #cccccc;
 $logo-font-size: $navigation-font-size;
 
 // Footer
