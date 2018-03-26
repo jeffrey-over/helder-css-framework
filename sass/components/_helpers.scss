@@ -39,6 +39,22 @@
 }
 
 
+.is-desktop-only {
+    display: none;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+@include breakpoint-phone-up {
+    .is-desktop-only {
+         display: block;
+         visibility: visible;
+         width: auto;
+         height: auto;
+     }
+ }
+
+
 // Padding and Margins
 .has-padding {
     padding: $default-padding !important;
