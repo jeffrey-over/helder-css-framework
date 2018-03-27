@@ -9,7 +9,7 @@ $widescreen: 1200px;
 $fullhd: 1800px; 
 
 // Global coloring
-$base-color: #1569fb;
+$base-color: #ffeb3b;
 $secondary-color: #55efc4;
 $accent-color: #dfe6e9;
 $background-color: #ffffff;
@@ -18,7 +18,7 @@ $font-color: #4D4D4D;
 $font-color-secondary: #666666;
 $link-color: #0070c9;
 $highlight-color: #ffeea8;
-$default-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+$default-box-shadow: 0 5px 13px 0 rgba(0,0,0,.12);
 $default-border: 1px solid rgba(10, 10, 10, 0.1);
 
 // Grid & Layout
@@ -40,7 +40,7 @@ $heading-font-weight: 600;
 $heading-font-color:  rgba(0,0,0,0.88);
 $heading-line-height: 1.25;
 $heading-margin: 2rem 0 $default-margin;
-$heading-letter-spacing: -.1rem;
+$heading-letter-spacing: auto;
 $h1: 4.2rem;
 $h2: 3.4rem;
 $h3: 2.4rem;
@@ -81,14 +81,14 @@ $outline-font-color-hover: darken($accent-color, 50%);
 // Buttons 
 $button-background: $base-color;
 $button-background-hover: darken($button-background, 10%);
-$button-font-color: #ffffff;
+$button-font-color: #000000;
 $button-font-weight: 400;
 $button-font-family: $font-family;
 $button-font-size: 1.5rem 2rem;
 $button-border-width: 1px;
 $button-border-style: solid;
 $button-border-color: $button-background;
-$button-border-radius: 50px;
+$button-border-radius: 4px;
 $button-text-transform: none;
 $button-padding: 1.5rem;
 $button-margin: 0 0 .5rem 0;
