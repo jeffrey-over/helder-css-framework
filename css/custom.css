@@ -12,10 +12,17 @@
     .navigation {
         margin-top: 0px;
     }
+
+    .hide-mobile {
+        display: none;
+        width: 0;
+        font-size: 0;
+        visibility: hidden;
+    }
 }
 
 
-.navigation button {
+.navigation .button {
     margin-top: 6px;
     padding: 1.2rem 1.4rem;
     border: 1px solid #4D4D4D;
@@ -30,8 +37,6 @@
     width: 100%;
     background-color: #f6f9fc;
     background: linear-gradient(to bottom, #dfe6e9, #f6f9fc);
-    position: relative;
-    top: -50px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -63,18 +68,44 @@
 }
 
 #intro section {
-    padding: 10rem 0 0 0;
+    padding: 7rem 0 0 0;
 }
 
 #intro h1 {
     font-size: 5.4rem;
 }
 
-#intro button {
+#intro .button-highlight {
     margin: 2rem 5rem 0 0;
     padding: 1.5rem 1.5rem 1.5rem 4rem;
     -webkit-transition: .1s ease-in-out;
     transition: .1s ease-in-out;
+    position: absolute;
 }
 
-/* Extra helpers */
+#intro .button-hightlight:hover {
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);  
+}
+
+#menu {
+    transform: translate(0);
+    transition-timing-function: cubic-bezier(.68,-.55,.265,1.55);
+    transition-duration: 1.6s;
+    transition-timing-function: ease;
+}
+
+@media only screen and (min-width: 800px) {
+    .fixed {
+        position: fixed;
+        top: 0px; 
+        z-index:2; 
+    }
+    
+    #content {
+        max-width: calc(100% - calc(100% / 3));
+    }
+
+    .extra-margin {
+        margin-left: calc(100% / 3);
+    }
+}

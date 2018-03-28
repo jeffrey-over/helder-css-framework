@@ -19,22 +19,22 @@
 </head>
 <body>
 
-<header class="navigation">
-    <div class="container">
-        <div class="brand">
-            <a href="#!">.Helder</a>
-        </div>
-        <nav class="is-desktop-only">
-            <ul>
-                <li><button class="is-outlined">Download now</button></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-
-
+<div id="wrap">
 <div class="has-full-width" id="intro">
     <div class="container">
+
+        <header class="navigation">
+            <div class="brand">
+                <a href="#" class="logo"><img src="./images/logo.png" width="50%" /></a>
+            </div>
+            <nav class="hide-mobile">
+                <ul>
+                    <li><a href="#download" class="button is-outlined">Download now</a></li>
+                </ul>
+            </nav>
+        </header>
+                
+
         <section>
             <div class="columns">
                 <div class="full column text-left">
@@ -42,7 +42,7 @@
                     <p>A easy to use, no-nonsense fundemental css framework. <br />Get started right away!</p>
 
                     <div>
-                        <button class="has-shadow">Get started <i class="fas fa-long-arrow-alt-right"></i></button>
+                        <a href="#getting-started" class="button button-highlight has-shadow">Get started <i class="fas fa-long-arrow-alt-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -55,15 +55,126 @@
 <div class="container">
     <section>
         <div class="columns">
-            <div class="third column">
+            <div id="menu" class="third column hide-mobile">
                 <h4>Installation</h4>
-                bladiebla
+                <a href="#download">Download</a><br />
+                <a href="#getting-started">Getting started</a><br />
+                <a href="#usage-sass">How to use Sass</a><br />
 
                 <h4>Content</h4>
-                bladiebla
+                <a href="#containers">Containers</a><br />
+                <a href="#grid">Grid</a><br />
+                <a href="#navigation">Navigation</a><br />
+                <a href="#footer">Footer</a><br />
+                <a href="#cards">Cards</a><br />
+                <a href="#typoghraphy">Typography</a><br />
+                <a href="#forms">Forms</a><br />
+                <a href="#tables">Tables</a><br />
+                <a href="#buttons">Buttons</a><br />
+                <a href="#code">Code</a><br />
+                <a href="#helpers">Helpers</a><br />
             </div>
-            <div class="two-thirds column">
-                Content
+            <div id="content" class="two-thirds column">
+
+                    <section>
+                            <a name="download">anchor test download</a>
+                            <h1 class="other-class">Headings &amp; Copy</h1>
+                            <h1 class="other-class">First Header h1</h1>
+                            <p class="test-class">
+                                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos.
+                            </p>
+                            <h2>Second header h2</h2>
+                            <p class="test-class">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                            <h3>Third header h3</h3>
+                            <p class="test-class">
+                                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia
+                                animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+                            </p>
+                            <h4>Fourth header h4</h4>
+                            <p class="test-class">
+                                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem
+                                ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+                            </p>
+                            <h5>Fifth header h5</h5>
+                            <p class="test-class">
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
+                                sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                            </p>
+                            <h6>Sixth header h6</h6>
+                            <p class="test-class">
+                                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos.
+                            </p>
+                        </section>
+                        <hr />
+                        <section>
+                            <h1 class="other-class">Links</h1>
+                            <a href="#">Sample text link</a>
+                            <a href="#">Sample button link</a>
+                        </section>
+                        <hr />
+                        <section>
+                            <h1 class="other-class">Lists</h1>
+                            <h2>Unordered list</h2>
+                            <ul>
+                                <li>Orange</li>
+                                <li>Apple</li>
+                                <li>Rhubarb</li>
+                                <li>Rasberry</li>
+                                <li>Blueberry</li>
+                                <li>Cherry</li>
+                            </ul>
+                            <h2>Ordered list</h2>
+                            <ol>
+                                <li>First</li>
+                                <li>Second</li>
+                                <li>Third</li>
+                                <li>Fourth</li>
+                                <li>Fifth</li>
+                                <li>Sixth</li>
+                            </ol>
+                            <h2>Definition list</h2>
+                            <dl>
+                                <dt>
+                          Kick
+                          </dt>
+                                <dd>
+                                    808
+                                </dd>
+                                <dt>
+                          Snare
+                          </dt>
+                                <dd>
+                                    909
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt> Maine </dt>
+                                <dd> Augusta </dd>
+                                <dt> California </dt>
+                                <dd> Sacremento </dd>
+                                <dt> Oregon </dt>
+                                <dd> Salem </dd>
+                                <dt> New York </dt>
+                                <dd> Albany </dd>
+                            </dl>
+                            <dl>
+                                <dt> Ascender </dt>
+                                <dd> The part of certain lowercase letters that extends above the x-height of a font. </dd>
+                                <dt> Font </dt>
+                                <dd> Traditionally, a complete set of characters for one typeface at one particular type size. Often used more loosely as a synonym for "typeface".
+                                </dd>
+                                <dt> Golden Section </dt>
+                                <dd>
+                                    The ideal proportion according to the ancient Greeks. It is visualized as the division of a line into two unequal segments in such a way that the ratio of the smaller segment to the larger segment is equal to the ratio of the larger to the whole. It is
+                                    usually defined as 21:34, that is, 21/34 and 34/(21+34) both equal approximately 0.618. A rectangle whose sides are of this proportion is called a "golden rectangle". Golden rectangles can be found in the proportions of the Parthenon
+                                    and many medieval manuscripts.
+                                </dd>
+                            </dl>
+                        </section>
+
             </div>
         </div>
     </section>
@@ -101,7 +212,11 @@
             </section>
         </div>
     </footer>
+</div>    
     
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
     
 
 </body>
