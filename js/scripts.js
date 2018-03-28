@@ -2,7 +2,8 @@ $(window).scroll(function(){
     if ($(this).scrollTop() > 500) {
         $('#menu').addClass('fixed');
         $('#content').addClass('extra-margin');
-    } else {
+    } 
+    else {
         $('#menu').removeClass('fixed');
         $('#content').removeClass('extra-margin');
     }
