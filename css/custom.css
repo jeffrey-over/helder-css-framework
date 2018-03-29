@@ -40,7 +40,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    overflow: inherit;
+    overflow: hidden;
     z-index: -1;
     height: auto;
     opacity: 1;
@@ -55,6 +55,7 @@
     bottom: 0;
     min-height: 500px;
     width: 300%;
+    overflow: hidden;
     background-image: url(../images/waves.svg);
     content: '';
     display: block;
