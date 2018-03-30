@@ -23,7 +23,8 @@ pre {
     font-size: $pre-font-size;
 	margin: $pre-margin;    
     background: $pre-background-color;  
-    color: $pre-font-color;  
+    color: $pre-font-color;
+    border-radius: $pre-border-radius;
 }
 
 code {

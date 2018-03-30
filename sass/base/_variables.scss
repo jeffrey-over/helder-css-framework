@@ -131,13 +131,14 @@ $pre-padding: 1rem;
 $pre-font-size: 14px;
 $pre-background-color: #f8f8f8;
 $pre-font-color: $font-color;
+$pre-border-radius: 5px;
 
 // Code
 $code-background-color: #f8f8f8;
 $code-font-color: #d63131;
 $code-line-height: inherit;
 $code-padding: 0 .6rem;
-$code-text-shadow: 0 1px white;
+$code-text-shadow: 0;
 $code-font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 
 
