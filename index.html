@@ -79,12 +79,10 @@
             <div id="content" class="two-thirds column">
 
                     <section>
-
-
                         <a name="getting-started"><h3>Getting started</h3></a>
-
-                        Download the minified Helder stylesheet and use this basic HTML template below. That's it! You're now ready to start your amazing project. Use the links in the menu or scroll down to see the documentation of the components Helder contains.
-                        
+                        <p>
+                            Download the minified Helder stylesheet and use this basic HTML template below. That's it! You're all set to start your next amazing project. 
+                        </p>                       
 <pre><code class="language-markup">&lt;!doctype html&gt;
 &lt;html&gt;
 &lt;head&gt;
@@ -102,11 +100,277 @@
 &lt;/html&gt;</code></pre>
 
                         <a href="css/main.css" target="_BLANK" class="button">Download now</a>
+                        <a name="usage-sass"><h3>Use Helder with SASS</h3></a>
+                        <p>
+                            Helder is available in <a href="https://sass-lang.com/guide" target="_BLANK">SASS</a> aswell. If you're familiar with SASS I recommand to make use of this option so you can customize Helder even more easily to your own preferences.
+                        </p>    
 
+                        <p>
+                            <b>1.</b> Clone the repository: <br /><a href="https://github.com/jeffrey-over/helder-css-framework" target="_BLANK">https://github.com/jeffrey-over/helder-css-framework</a>
+                        </p>   
 
-                        <a name="usage-sass"><h3>How to use Helder with SASS</h3></a>
-                        
+                        <p>
+                            <b>2.</b> Customize the variables from <code>_variables.scss</code></u>
+<pre><code class="language-css">
+    // Imports
+    // @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+    
+    // Sizing
+    $mobile: 600px;
+    $tablet-portrait: 800px;
+    $desktop: 1000px;
+    $widescreen: 1200px;
+    $fullhd: 1800px; 
+    
+    // Global coloring
+    $base-color: #ffeb3b;
+    $secondary-color: #55efc4;
+    $accent-color: #dfe6e9;
+    $background-color: #ffffff;
+    $background-color-secondary: #f6f9fc;
+    $font-color: #4D4D4D;
+    $font-color-secondary: #666666;
+    $link-color: #0070c9;
+    $highlight-color: #ffeea8;
+    $default-box-shadow: 0 5px 13px 0 rgba(0,0,0,.12);
+    $default-border: 1px solid rgba(10, 10, 10, 0.1);
+    
+    // Grid & Layout
+    $default-margin: 1.5rem;
+    $default-padding: 1.5rem;
+    $basic-elements-margin: 0 0 $default-margin 0; //p,ol,ul,dl,table
+    $container-padding: 0 10px;
+    $column-padding: 1rem;
+    $column-margin-bottom: 0;
+    $section-padding: 40px 0 0 0;
+    $mark-padding: 0 0.4rem;
+    
+    // Typography
+    $font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    $font-size: 1.6rem;
+    $font-size-small: 1.5rem;
+    $line-height: 1.6;
+    $heading-font-weight: 600;
+    $heading-font-color:  rgba(0,0,0,0.88);
+    $heading-line-height: 1.25;
+    $heading-margin: 2rem 0 $default-margin;
+    $heading-letter-spacing: auto;
+    $h1: 4.2rem;
+    $h2: 3.4rem;
+    $h3: 2.4rem;
+    $h4: 2rem;
+    $h5: 1.6rem;
+    $h6: 1.4rem;
+    
+    // Forms
+    $label-font-weight: 600;
+    $label-margin: 2rem 0 1rem;
+    $input-border-radius: 5px;
+    $input-padding: 1rem;
+    $input-line-height: 1;
+    $input-focus-box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    $input-focus-border: 1px solid rgba(81, 203, 238, 1);
+    $input-select-height: 4.6rem;
+    $input-valid-box-shadow: 0 0 5px #55efc4;
+    $input-valid-border: 1px solid #55efc4;
+    $input-invalid-box-shadow: 0 0 5px #D63131;
+    $input-invalid-border: 1px solid #D63131;
+    
+    // Secondary styling
+    $secondary-background: $secondary-color;
+    $secondary-background-hover: darken($secondary-background, 10%);
+    $secondary-border: 1px solid $secondary-color;
+    $secondary-border-hover: 1px solid darken($secondary-color, 10%);
+    $secondary-font-color: #ffffff;
+    $outline-font-color-hover: #ffffff;
+    
+    // Outlined styling
+    $outline-border: 1px solid $accent-color;
+    $outline-border-hover: 1px solid darken($accent-color, 30%);
+    $outline-background: transparent;
+    $outline-background-hover: transparent;
+    $outline-font-color: darken($accent-color, 50%);
+    $outline-font-color-hover: darken($accent-color, 50%);
+    
+    // Buttons 
+    $button-background: $base-color;
+    $button-background-hover: darken($button-background, 10%);
+    $button-font-color: #000000;
+    $button-font-weight: 400;
+    $button-font-family: $font-family;
+    $button-font-size: 1.5rem 2rem;
+    $button-border-width: 1px;
+    $button-border-style: solid;
+    $button-border-color: $button-background;
+    $button-border-radius: 4px;
+    $button-text-transform: none;
+    $button-padding: 1.5rem;
+    $button-margin: 0 0 .5rem 0;
+    
+    // Cards
+    $card-padding: 2rem;
+    $card-margin: 1rem;
+    $card-font-size: 1.4rem;
+    $card-heading-margin: 1rem 0;
+    $card-box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.3);
+    
+    // Table
+    $table-caption-font-style: italic;
+    $table-heading-font-color: $heading-font-color;
+    $table-footer-font-weight: 600;
+    $table-row-hover-background: $background-color-secondary;
+    $table-cell-padding: 1.2rem 1.5rem;
+    $table-cell-border: 1px solid rgba(10, 10, 10, 0.1);
+    $table-cell-margin: 0;
+    $table-cell-background: transparent;
+    
+    // Lists
+    $dd-margin: 0;
+    $dd-padding: 0 0 0.5em 0;
+    
+    // Blockqoute
+    $blockqoute-font: 14px/22px normal $font-family;
+    $blockqoute-margin: 10px 0 10px 50px;
+    $blockqoute-padding: 0 0 0 15px;
+    $blockqoute-border: 2px solid rgba(10, 10, 10, 0.1);
+    
+    // HR
+    $hr-color: rgba(10, 10, 10, 0.1);
+    $hr-margin: 2rem 0;
+    $hr-border: 1px solid $hr-color;
+    
+    // Pre
+    $pre-margin: 1.5rem 0;
+    $pre-padding: 1rem;
+    $pre-font-size: 14px;
+    $pre-background-color: #f8f8f8;
+    $pre-font-color: $font-color;
+    $pre-border-radius: 5px;
+    
+    // Code
+    $code-background-color: #f8f8f8;
+    $code-font-color: #d63131;
+    $code-line-height: inherit;
+    $code-padding: 0 .6rem;
+    $code-text-shadow: 0;
+    $code-font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    
+    // Navigation
+    $navigation-height: 50px;
+    $navigation-background-color: transparant;
+    $navigation-mobile-background-color: transparant;
+    $navigation-padding-mobile: 0;
+    $navigation-padding-desktop: 0;
+    $navigation-font-color: $font-color;
+    $navigation-link-color: $font-color;
+    $navigation-mobile-link-color: $font-color;
+    $navigation-link-hover-color: #a1a7b9;
+    $navigation-link-padding: 0 30px;
+    $navigation-mobile-link-padding: 0 40px;
+    $navigation-font-size: 1.4rem;
+    $navigation-heading-font-color: #a1a7b9;
+    $navigation-line-height: $navigation-height;
+    $navigation-mobile-nav-hover-color: $background-color-secondary;
+    $logo-font-color: #cccccc;
+    $logo-font-size: $navigation-font-size;
+    
+    // Footer
+    $footer-background-color: #191919;
+    $footer-padding-mobile: 2rem 0;
+    $footer-padding-desktop: 3rem 0;
+    $footer-font-color: #a1a7b9;
+    $footer-font-size: 1.4rem;
+    $footer-heading-font-color: #a1a7b9;
+        </code></pre>                              
+                        </p>
+                       
+                        <p>
+                            <b>3.</b> Get used with the structure of the SASS environment:</b>
+<pre><code class="language-css">
+    // Base
+    @import "base/variables";
+    @import "base/mixins";
+    @import "base/reset";
+    
+    // Components
+    @import "components/base";
+    @import "components/buttons";
+    @import "components/forms";
+    @import "components/grid";
+    @import "components/code";
+    @import "components/typography";
+    @import "components/tables";
+    @import "components/cards";
+    @import "components/helpers";
+    @import "components/footer";
+    @import "components/navigation";     
+</code></pre>                              
+                        </p> 
+
+                         
                         <a name="containers"><h3>Containers</h3></a>
+                        <p>
+                            Helder uses one container with two extra flavors. the default <code>.container</code> is centered width a <code>max-width</code> of <code>90%</code> on mobile up to <code>75%</code> on desktop. 
+                        </p>
+
+                        <h4>Extra classes</h4>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Class</th>
+                                    <th>Descripion</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td width="200"><code>.has-full-width</code></td>
+                                    <td>Changes the <code>max-width</code> to <code>100%</code> and removes the <code>padding</code> above phone sizes.</td>
+                                </tr>                                
+                                <tr>
+                                    <td><code>.has-small-width</code></td>
+                                    <td>Changes the <code>max-width</code> to <code>$mobile</code> for all devices</td>
+                                </tr>
+                            </tbody>
+                        </table>                        
+                        
+                        <h4>Sass Variables</h4>
+                        <p>You can change the default container variables to change the desired behaviour</p>
+
+                        <table>
+                                <thead>
+                                    <tr>
+                                        <th>Variable</th>
+                                        <th>Default value</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                         <td width="200"><code>$container-padding</code></td>
+                                         <td><code>0 1rem</code></td>
+                                    </tr>                                    
+                                    <tr>
+                                        <td><code>$mobile</code></td>
+                                        <td><code>600px</code></td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>$tablet-portrait</code></td>
+                                        <td><code>800px</code></td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>$desktop</code></td>
+                                        <td><code>1000px</code></td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>$widescreen</code></td>
+                                        <td><code>1200px</code></td>
+                                    </tr>   
+                                    <tr>
+                                        <td><code>$fullhd</code></td>
+                                        <td><code>1800px</code></td>
+                                    </tr>                                                                                                                                                                            
+                                </tbody>
+                            </table>  
+   
                         <a name="grid"><h3>Grid</h3></a>
                         <a name="typography"><h3>Typography</h3></a>
                         <a name="forms"><h3>Forms</h3></a>

@@ -25,10 +25,10 @@ $default-border: 1px solid rgba(10, 10, 10, 0.1);
 $default-margin: 1.5rem;
 $default-padding: 1.5rem;
 $basic-elements-margin: 0 0 $default-margin 0; //p,ol,ul,dl,table
-$container-padding: 0 10px;
+$container-padding: 0 1rem;
 $column-padding: 1rem;
 $column-margin-bottom: 0;
-$section-padding: 40px 0 0 0;
+$section-padding: 4rem 0 0 0;
 $mark-padding: 0 0.4rem;
 
 // Typography
@@ -140,7 +140,6 @@ $code-line-height: inherit;
 $code-padding: 0 .6rem;
 $code-text-shadow: 0;
 $code-font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-
 
 // Navigation
 $navigation-height: 50px;
