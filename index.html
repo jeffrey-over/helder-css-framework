@@ -61,7 +61,8 @@
             <div id="menu" class="third column hide-mobile">
                 <h4>Installation</h4>
                 <a href="#getting-started">Getting started</a><br />
-                <a href="#usage-sass">How to use Sass</a><br />
+                <a href="#usage-sass">Use with Sass</a><br />
+                <a href="#view-testpage">View testpage</a><br />                
 
                 <h4>Content</h4>
                 <a href="#containers">Containers</a><br />
@@ -99,8 +100,10 @@
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
 
-                        <a href="css/main.css" target="_BLANK" class="button">Download now</a>
-                        <a href="testing-elements.html" target="_BLANK" class="button is-secondary" style="margin-left:30px;">View all components</a>
+                        <div name="view-testpage">
+                            <a href="css/main.css" target="_BLANK" class="button">Download now</a>
+                            <a href="testing-elements.html" target="_BLANK" class="button is-secondary" style="margin-left:30px;">View all components</a>
+                        </div>
                         <a name="usage-sass"><h3>Use Helder with SASS</h3></a>
                         <p>
                             Helder is available in <a href="https://sass-lang.com/guide" target="_BLANK">SASS</a> aswell. If you're familiar with SASS I recommand to make use of this option so you can customize Helder even more easily to your own preferences.
@@ -389,7 +392,7 @@
 
                             <p>
                                 Helder uses mobile first approach grid system. The breakpoint is defined with the <code>breakpoint-phone-up</code> mixin and from there the widths are determined. The mixin uses the <code>$tablet-portrait</code> at default. Which can be changed customized in <code>_variables.scss</code>. 
-                                The widths are determined with the calc function. Zie the code from <code>_grid.scss</code> below.
+                                The widths are simply calculated with the calc function. 
                             </p>
 
                             
@@ -456,37 +459,7 @@
     </tbody>
 </table> 
                             
-                            <h4>Sass code</h4>
-<pre><code class="language-css">    .full,
-    .third,
-    .two-thirds,
-    .fourth,
-    .half {
-        width: 100%;
-    }
-    
-        @include breakpoint-phone-up {
-            .full {
-                width: 100%;
-            }
-            .half {
-                width: calc(100% / 2);
-            }
-            .third {
-                width: calc(100% / 3);
-            }
-            .fourth {
-                width: calc(100% / 4);
-            }
-            .two-thirds {
-                width: calc(100% / 3 * 2);
-            }
-            .column {
-                float: left;
-            }
-        }</code></pre> 
-   
-
+                
                             
                             <h4>Sass Variables</h4>
                             <p>You can change the column wrapper variables to change the desired behaviour</p>
@@ -514,61 +487,7 @@
                             
                             <a name="typography"><h3>Typography</h3></a>
                             <p>Typography is styled minimalistic and consistent.</p>
-                            <h4>Sass code</h4>
-<pre><code class="language-css">    // Headings
-    h1,h2,h3,h4,h5,h6 {
-        margin: $heading-margin;
-        color: $heading-font-color;
-        font-weight: $heading-font-weight;
-        line-height: $heading-line-height;
-        letter-spacing: $heading-letter-spacing;
-    }
-    
-    h1 {font-size: $h1;}
-    h2 {font-size: $h2;}
-    h3 {font-size: $h3;}
-    h4 {font-size: $h4;}
-    h5 {font-size: $h5;}
-    h6 {font-size: $h6;}
-    
-    // Links
-    a {
-        color: $link-color;
-        text-decoration: none;
-        &:hover,
-        {
-            text-decoration: underline;
-        }
-        &:visited,
-        &:active,
-        &:focus  {
-            text-decoration: none;
-        }    
-    }
-    
-    dt {
-        font-weight: bold;
-        text-decoration: underline;
-        }
-        
-    dd {
-        margin: $dd-margin;
-        padding: $dd-padding;
-        }
-    
-    // Blockqoute
-    blockquote {
-        font: $blockqoute-font;
-        margin: $blockqoute-margin;
-        padding: $blockqoute-padding;
-        border-left: $blockqoute-border;
-        } 
-    
-    // Manipulation
-    b {
-        color: black;
-    }</code></pre> 
-
+   
                             
                                 <h4>Sass Variables</h4>
                             <p>You can change the typography variables to change the desired behaviour</p>
@@ -736,66 +655,7 @@
         &lt;/div&gt;
     &lt;/fieldset&gt;
 &lt;/form&gt;</code></pre>                        
-                            
-                            <h4>Sass code</h4>
-<pre><code class="language-css">
-    fieldset {
-        border: 0;
-        padding: 0;
-    }
-    
-    label {
-        font-weight: $label-font-weight;
-        max-width: 100%;
-        display: block;
-        margin: $label-margin;
-        font-family: $font-family;
-        font-size: $font-size-small;
-        line-height: $line-height;
-        color: $font-color;
-        -webkit-font-smoothing: antialiased;    
-    }
-    
-    [type=color], [type=date], [type=datetime-local], [type=datetime], [type=email], [type=month], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=time], [type=url], [type=week], select, textarea {
-        @extend .has-border;
-        display: block;
-        border-radius: $input-border-radius;
-        padding: $input-padding;
-        outline: none;
-        background: transparent;
-        margin-bottom: 1rem;
-        width: 100%;
-        max-width: 100%;
-        font-family: $font-family;
-        font-size: $font-size-small;
-        line-height: $input-line-height;
-        color: $font-color;
-        -webkit-font-smoothing: antialiased;
-        -webkit-transition: all 0.50s ease-in-out;
-        -moz-transition: all 0.50s ease-in-out;
-        -ms-transition: all 0.50s ease-in-out;
-        -o-transition: all 0.50s ease-in-out;    
-        &:focus {
-            box-shadow: $input-focus-box-shadow;
-            border: $input-focus-border;
-        }
-    }
-    
-    select {
-        height: $input-select-height;
-    }
-    
-    // Validation
-    .is-valid { 
-        box-shadow: $input-valid-box-shadow;
-        border: $input-valid-border;
-    }
-    
-    .is-invalid {
-        box-shadow: $input-invalid-box-shadow;
-        border: $input-invalid-border;    
-    }</code></pre> 
-                            
+                         
                             
                                 <h4>Sass Variables</h4>
                             <p>You can change the form variables to change the desired behaviour</p>
@@ -900,55 +760,6 @@
     &lt;/table&gt;
 </code></pre>                        
                             
-                            <h4>Sass code</h4>
-<pre><code class="language-css">     caption {
-            @extend .text-left;
-            font-style: $table-caption-font-style;
-        }
-        
-        table {
-            border-collapse: collapse;
-            border-spacing: 0;
-            width: 100%;
-            max-width: 100%;
-        }
-        
-        thead, tfoot {
-            @extend .text-left;
-            color: $table-heading-font-color;
-            vertical-align: bottom;
-        }
-        
-        tfoot {
-            font-weight: $table-footer-font-weight;
-        }
-        
-        td:first-child, .th:first-child {
-            border-left-width: 0;
-        }
-        
-        th:last-child, td:last-child {
-            padding-right: 0;
-        }
-        
-        tr:hover {
-            background-color: $table-row-hover-background;
-        }
-        
-        th, td {
-            @extend .text-left;
-            padding: $table-cell-padding;
-            border-bottom: $table-cell-border;
-            font-size: inherit;
-            color: inherit;
-            margin: $table-cell-margin;
-            overflow: visible;
-        }
-        
-        td {
-            background-color: $table-cell-background;
-        }</code></pre> 
-                            
                             
                                 <h4>Sass Variables</h4>
                             <p>You can change the form variables to change the desired behaviour</p>
@@ -962,13 +773,37 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td width="200"><code>$label-font-weight</code></td>
-                                        <td><code>600</code></td>
+                                        <td width="200"><code>$table-caption-font-style</code></td>
+                                        <td><code>italic</code></td>
                                     </tr>                                    
+                                <tr>
+                                        <td><code>$table-heading-font-color</code></td>
+                                        <td><code>$heading-font-color</code></td>
+                                    </tr>   
                                     <tr>
-                                        <td><code>$label-margin</code></td>
-                                        <td><code>2rem 0 1rem</code></td>
-                                    </tr>                                                                                                                                                                                                                                                                  
+                                        <td><code>$table-footer-font-weight</code></td>
+                                        <td><code>600</code></td>
+                                    </tr>   
+                                    <tr>
+                                        <td><code>$table-row-hover-background</code></td>
+                                        <td><code>$background-color-secondary</code></td>
+                                    </tr>   
+                                    <tr>
+                                        <td><code>$table-cell-padding</code></td>
+                                        <td><code>1.2rem 1.5rem</code></td>
+                                    </tr>   
+                                    <tr>
+                                        <td><code>$table-cell-border</code></td>
+                                        <td><code>1px solid rgba(10, 10, 10, 0.1)</code></td>
+                                    </tr>   
+                                    <tr>
+                                        <td><code>$table-cell-margin</code></td>
+                                        <td><code>0</code></td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>$table-cell-background</code></td>
+                                        <td><code>transparent</code></td>
+                                    </tr>                                                                                                                                                                                                                                                                                                                                                                                                                                                          
                                 </tbody>
                             </table>  
                             
@@ -980,9 +815,6 @@
                             <h4>Code example</h4>
 <pre><code class="language-markup"></code></pre>                        
                             
-                            <h4>Sass code</h4>
-<pre><code class="language-css">
- </code></pre> 
                             
                             
                                 <h4>Sass Variables</h4>
@@ -1015,11 +847,7 @@
                             
                             <h4>Code example</h4>
 <pre><code class="language-markup"></code></pre>                        
-                            
-                            <h4>Sass code</h4>
-<pre><code class="language-css">
- </code></pre> 
-                            
+          
                             
                                 <h4>Sass Variables</h4>
                             <p>You can change the form variables to change the desired behaviour</p>
@@ -1050,11 +878,7 @@
                             
                             <h4>Code example</h4>
 <pre><code class="language-markup"></code></pre>                        
-                            
-                            <h4>Sass code</h4>
-<pre><code class="language-css">
- </code></pre> 
-                            
+  
                             
                                 <h4>Sass Variables</h4>
                             <p>You can change the form variables to change the desired behaviour</p>
@@ -1086,10 +910,7 @@
                             <h4>Code example</h4>
 <pre><code class="language-markup"></code></pre>                        
                             
-                            <h4>Sass code</h4>
-<pre><code class="language-css">
- </code></pre> 
-                            
+
                             
                                 <h4>Sass Variables</h4>
                             <p>You can change the form variables to change the desired behaviour</p>
@@ -1121,11 +942,7 @@
                             <h4>Code example</h4>
 <pre><code class="language-markup"></code></pre>                        
                             
-                            <h4>Sass code</h4>
-<pre><code class="language-css">
- </code></pre> 
-                            
-                            
+             
                                 <h4>Sass Variables</h4>
                             <p>You can change the form variables to change the desired behaviour</p>
                             
@@ -1156,11 +973,7 @@
                             <h4>Code example</h4>
 <pre><code class="language-markup"></code></pre>                        
                             
-                            <h4>Sass code</h4>
-<pre><code class="language-css">
- </code></pre> 
-                            
-                            
+           
                                 <h4>Sass Variables</h4>
                             <p>You can change the form variables to change the desired behaviour</p>
                             

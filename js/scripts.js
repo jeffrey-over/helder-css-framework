@@ -7,6 +7,9 @@ $(window).scroll(function(){
         $('#menu').removeClass('fixed');
         $('#content').removeClass('extra-margin');
     }
+
+
+    
 });
 
 // Select all links with hashes
