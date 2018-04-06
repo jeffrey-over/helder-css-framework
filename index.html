@@ -808,196 +808,341 @@
                             </table>  
                             
 
-                            <a name="buttons"><h3>Buttons</h3></a>
-
-                            <p></p>
-                            
-                            <h4>Code example</h4>
-<pre class="has-shadow"><code class="language-markup"></code></pre>                        
-                            
-                            
-                            
-                                <h4>Sass Variables</h4>
-                            <p>You can change the form variables to change the desired behaviour</p>
-                            
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Variable</th>
-                                        <th>Default value</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td width="200"><code>$label-font-weight</code></td>
-                                        <td><code>600</code></td>
-                                    </tr>                                    
-                                    <tr>
-                                        <td><code>$label-margin</code></td>
-                                        <td><code>2rem 0 1rem</code></td>
-                                    </tr>                                                                                                                                                                                                                                                                  
-                                </tbody>
-                            </table>  
-                            
-
-
-                            <a name="code"><h3>Code</h3></a>
-
-                            <p></p>
-                            
-                            <h4>Code example</h4>
-<pre class="has-shadow"><code class="language-markup"></code></pre>                        
-          
-                            
-                                <h4>Sass Variables</h4>
-                            <p>You can change the form variables to change the desired behaviour</p>
-                            
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Variable</th>
-                                        <th>Default value</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td width="200"><code>$label-font-weight</code></td>
-                                        <td><code>600</code></td>
-                                    </tr>                                    
-                                    <tr>
-                                        <td><code>$label-margin</code></td>
-                                        <td><code>2rem 0 1rem</code></td>
-                                    </tr>                                                                                                                                                                                                                                                                  
-                                </tbody>
-                            </table>  
-                            
-                            
-                            <a name="helpers"><h3>Helpers</h3></a>
-
-                            <p></p>
-                            
-                            <h4>Code example</h4>
-<pre class="has-shadow"><code class="language-markup"></code></pre>                        
   
-                            
-                                <h4>Sass Variables</h4>
-                            <p>You can change the form variables to change the desired behaviour</p>
-                            
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Variable</th>
-                                        <th>Default value</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td width="200"><code>$label-font-weight</code></td>
-                                        <td><code>600</code></td>
-                                    </tr>                                    
-                                    <tr>
-                                        <td><code>$label-margin</code></td>
-                                        <td><code>2rem 0 1rem</code></td>
-                                    </tr>                                                                                                                                                                                                                                                                  
-                                </tbody>
-                            </table>  
-                            
-                            
-                            <a name="cards"><h3>Cards</h3></a>
+<a name="buttons"><h3>Buttons</h3></a>
 
-                            <p></p>
-                            
-                            <h4>Code example</h4>
+<p>Buttons can be created with input elements or the <code>.button</code> class.</p>
+
+<h4>Primary</h4>
+<button>A button</button>
+<h4>Code example</h4>
+<pre class="has-shadow"><code class="language-markup">
+    &lt;button&gt;A button&lt;/button&gt;
+</code></pre>                        
+
+    <h4>Sass Variables</h4>
+<p>You can change the form variables to change the desired behaviour</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Variable</th>
+            <th>Default value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td width="200"><code>$button-border-width</code></td>
+            <td><code>1px</code></td>
+        </tr>                                    
+        <tr>
+            <td><code>$button-border-style</code></td>
+            <td><code>solid</code></td>
+        </tr>  
+        <tr>
+            <td><code>$button-border-color</code></td>
+            <td><code>$button-background</code></td>
+        </tr>  
+        <tr>
+            <td><code>$button-border-radius</code></td>
+            <td><code>4px</code></td>
+        </tr>  
+        <tr>
+            <td><code>$button-background</code></td>
+            <td><code>$base-color</code></td>
+        </tr>  
+        <tr>
+            <td><code>$button-font-color</code></td>
+            <td><code>#000000</code></td>
+        </tr>  
+        <tr>
+            <td><code>$button-font-weight</code></td>
+            <td><code>400</code></td>
+        </tr>  
+        <tr>
+            <td><code>$button-font-family</code></td>
+            <td><code>$font-family</code></td>
+        </tr>  
+        <tr>
+            <td><code>$button-font-size</code></td>
+            <td><code> 1.5rem 2rem</code></td>
+        </tr>  
+        <tr>
+            <td><code>$button-text-transform</code></td>
+            <td><code>none</code></td>
+        </tr>  
+        <tr>
+            <td><code>$button-padding</code></td>
+            <td><code>1.5rem</code></td>
+        </tr>  
+        <tr>
+            <td><code>$button-margin</code></td>
+            <td><code>0 0 .5rem 0</code></td>
+        </tr>  
+        <tr>
+            <td><code>$button-background-hover</code></td>
+            <td><code>darken($button-background, 10%)</code></td>
+        </tr>                                                                                                                                                                                                                                                                                                                                                                   
+    </tbody>
+</table>  
+
+
+
+<h4>Secondary</h4>
+<button class="is-secondary">A button</button>
+
+
+
+<h4>Code example</h4>
+<pre class="has-shadow"><code class="language-markup">
+    &lt;button class="is-secondary"&gt;A button&lt;/button&gt;    
+</code></pre>                        
+
+
+    <h4>Sass Variables</h4>
+<p>You can change the form variables to change the desired behaviour</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Variable</th>
+            <th>Default value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td width="200"><code>$secondary-background</code></td>
+            <td><code>$secondary-color</code></td>
+        </tr>    
+        <tr>
+            <td><code>$secondary-background-hover</code></td>
+            <td><code> darken($secondary-background, 10%)</code></td>
+        </tr>   
+        <tr>
+            <td><code>$secondary-border</code></td>
+            <td><code>1px solid $secondary-color</code></td>
+        </tr>  
+        <tr>
+            <td><code>$secondary-border-hover</code></td>
+            <td><code>1px solid darken($secondary-color, 10%)</code></td>
+        </tr>                                                
+        <tr>
+            <td><code>$secondary-font-color</code></td>
+            <td><code>#ffffff</code></td>
+        </tr>  
+        <tr>
+            <td><code>$secondary-font-color-hover</code></td>
+            <td><code>#ffffff</code></td>
+        </tr>              
+                                                                                                                                                                                                                                                                                                          
+    </tbody>
+</table>  
+
+
+<h4>Outlined</h4>
+<button class="is-outlined">A large button</button>
+
+<h4>Code example</h4>
+<pre class="has-shadow"><code class="language-markup">
+    &lt;button class="is-outlined"&gt;A large button&lt;/button&gt;
+</code></pre>                        
+
+
+    <h4>Sass Variables</h4>
+<p>You can change the form variables to change the desired behaviour</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Variable</th>
+            <th>Default value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td width="200"><code>$outline-border</code></td>
+            <td><code>1px solid $accent-color</code></td>            
+        </tr>                                    
+        <tr>
+            <td><code>$outline-border-hover</code></td>
+            <td><code>1px solid darken($accent-color, 30%)</code></td>
+        </tr>        
+        <tr>
+            <td><code>$outline-background</code></td>
+            <td><code>transparent</code></td>
+        </tr>
+        <tr>
+            <td><code>$outline-background-hover</code></td>
+            <td><code>transparent</code></td>
+        </tr>
+        <tr>
+            <td><code>$outline-font-color</code></td>
+            <td><code>darken($accent-color, 50%)</code></td>
+        </tr>
+        <tr>
+            <td><code>$outline-font-color-hover</code></td>
+             <td><code>darken($accent-color, 50%)</code></td>
+        </tr>                                                                                                                                                                                                                                                                                                      
+    </tbody>
+</table>  
+
+
+
+<a name="code"><h3>Code</h3></a>
+
+<p></p>
+
+<h4>Code example</h4>
 <pre class="has-shadow"><code class="language-markup"></code></pre>                        
-                            
 
-                            
-                                <h4>Sass Variables</h4>
-                            <p>You can change the form variables to change the desired behaviour</p>
-                            
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Variable</th>
-                                        <th>Default value</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td width="200"><code>$label-font-weight</code></td>
-                                        <td><code>600</code></td>
-                                    </tr>                                    
-                                    <tr>
-                                        <td><code>$label-margin</code></td>
-                                        <td><code>2rem 0 1rem</code></td>
-                                    </tr>                                                                                                                                                                                                                                                                  
-                                </tbody>
-                            </table>  
-                            
-                            
-                            <a name="navigation"><h3>Navigation</h3></a>
 
-                            <p></p>
-                            
-                            <h4>Code example</h4>
+    <h4>Sass Variables</h4>
+<p>You can change the form variables to change the desired behaviour</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Variable</th>
+            <th>Default value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td width="200"><code>$label-font-weight</code></td>
+            <td><code>600</code></td>
+        </tr>                                    
+        <tr>
+            <td><code>$label-margin</code></td>
+            <td><code>2rem 0 1rem</code></td>
+        </tr>                                                                                                                                                                                                                                                                  
+    </tbody>
+</table>  
+
+
+<a name="helpers"><h3>Helpers</h3></a>
+
+<p></p>
+
+<h4>Code example</h4>
 <pre class="has-shadow"><code class="language-markup"></code></pre>                        
-                            
-             
-                                <h4>Sass Variables</h4>
-                            <p>You can change the form variables to change the desired behaviour</p>
-                            
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Variable</th>
-                                        <th>Default value</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td width="200"><code>$label-font-weight</code></td>
-                                        <td><code>600</code></td>
-                                    </tr>                                    
-                                    <tr>
-                                        <td><code>$label-margin</code></td>
-                                        <td><code>2rem 0 1rem</code></td>
-                                    </tr>                                                                                                                                                                                                                                                                  
-                                </tbody>
-                            </table>  
-                            
-                            
-                            <a name="footer"><h3>Footer</h3></a>
 
-                            <p></p>
-                            
-                            <h4>Code example</h4>
+
+    <h4>Sass Variables</h4>
+<p>You can change the form variables to change the desired behaviour</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Variable</th>
+            <th>Default value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td width="200"><code>$label-font-weight</code></td>
+            <td><code>600</code></td>
+        </tr>                                    
+        <tr>
+            <td><code>$label-margin</code></td>
+            <td><code>2rem 0 1rem</code></td>
+        </tr>                                                                                                                                                                                                                                                                  
+    </tbody>
+</table>  
+
+
+<a name="cards"><h3>Cards</h3></a>
+
+<p></p>
+
+<h4>Code example</h4>
 <pre class="has-shadow"><code class="language-markup"></code></pre>                        
-                            
-           
-                                <h4>Sass Variables</h4>
-                            <p>You can change the form variables to change the desired behaviour</p>
-                            
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Variable</th>
-                                        <th>Default value</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td width="200"><code>$label-font-weight</code></td>
-                                        <td><code>600</code></td>
-                                    </tr>                                    
-                                    <tr>
-                                        <td><code>$label-margin</code></td>
-                                        <td><code>2rem 0 1rem</code></td>
-                                    </tr>                                                                                                                                                                                                                                                                  
-                                </tbody>
-                            </table>  
-                            
 
-   
+
+
+    <h4>Sass Variables</h4>
+<p>You can change the form variables to change the desired behaviour</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Variable</th>
+            <th>Default value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td width="200"><code>$label-font-weight</code></td>
+            <td><code>600</code></td>
+        </tr>                                    
+        <tr>
+            <td><code>$label-margin</code></td>
+            <td><code>2rem 0 1rem</code></td>
+        </tr>                                                                                                                                                                                                                                                                  
+    </tbody>
+</table>  
+
+
+<a name="navigation"><h3>Navigation</h3></a>
+
+<p></p>
+
+<h4>Code example</h4>
+<pre class="has-shadow"><code class="language-markup"></code></pre>                        
+
+
+    <h4>Sass Variables</h4>
+<p>You can change the form variables to change the desired behaviour</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Variable</th>
+            <th>Default value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td width="200"><code>$label-font-weight</code></td>
+            <td><code>600</code></td>
+        </tr>                                    
+        <tr>
+            <td><code>$label-margin</code></td>
+            <td><code>2rem 0 1rem</code></td>
+        </tr>                                                                                                                                                                                                                                                                  
+    </tbody>
+</table>  
+
+
+<a name="footer"><h3>Footer</h3></a>
+
+<p></p>
+
+<h4>Code example</h4>
+<pre class="has-shadow"><code class="language-markup"></code></pre>                        
+
+
+    <h4>Sass Variables</h4>
+<p>You can change the form variables to change the desired behaviour</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Variable</th>
+            <th>Default value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td width="200"><code>$label-font-weight</code></td>
+            <td><code>600</code></td>
+        </tr>                                    
+        <tr>
+            <td><code>$label-margin</code></td>
+            <td><code>2rem 0 1rem</code></td>
+        </tr>                                                                                                                                                                                                                                                                  
+    </tbody>
+</table>  
+
 
                      </section>
 
