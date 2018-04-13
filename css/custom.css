@@ -31,6 +31,10 @@
     transition: .1s ease-in-out;
 }
 
+pre[class*="language-"] {
+    margin: 0 0 3rem !important;
+}
+
 
 #intro {
     min-height: 500px;
@@ -116,4 +120,14 @@
 #content section {padding: 0;}
 #content h3 {
     margin-top: 5rem;
+}
+
+#content h4 {
+    font-size: 1.8rem;
+    text-decoration: underline;
+    margin: 2rem 0 1rem;
+}
+
+#outro {
+    background-image: linear-gradient(to bottom, #dfe6e9, #f6f9fc);
 }
