@@ -131,3 +131,4 @@ pre[class*="language-"] {
 #outro {
     background-image: linear-gradient(to bottom, #dfe6e9, #f6f9fc);
 }
+footer { z-index: 3;}
